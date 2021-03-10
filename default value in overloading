@@ -1,0 +1,31 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    float m,n;
+    float power(float m,int n=2);
+    float power(float m,float n);
+    void display(float,float);
+
+    cout<<"Enter the base value  and power value respectively"<<endl;
+    cin>>m>>n;
+
+    display(m,n);
+    return 0;
+}
+float power(float x, float y)
+{
+    float result= pow(x,y);
+    return result;
+}
+float power(float a,int b =2)
+{
+    float result= pow(a,b);
+    return result;
+}
+void display(float c, float d)
+{
+    cout<<"result of "<<c<<"^"<<d<<" is" << power(c,d)<<endl;
+    cout<<"result of default power "<<c<<"^"<<2<<" is" << power(c);
+}
